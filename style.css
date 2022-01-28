@@ -1,0 +1,131 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  color: #8d8d8d;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./js/bg2.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.count {
+  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.count__clock {
+  padding-top: 80px;
+}
+
+.count__btn {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: middle;
+  margin: 1em;
+  padding: 10px 40px;
+  color: #f45e61;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all ease 400ms;
+  box-shadow: 0px 0px 2px 2px #f45e61;
+}
+.count__btn:hover {
+  color: #ce7bb0;
+  box-shadow: 0px 0px 2px 2px #ce7bb0;
+  transform: scale(1.1);
+}
+
+input.count__input {
+  height: 38px;
+  transition: all ease 400ms;
+  box-shadow: 0px 0px 2px 2px #f45e61;
+  border: none;
+}
+
+input.count__input:hover {
+  box-shadow: 0px 0px 2px 2px #ce7bb0;
+  transform: scale(1.1);
+}
+
+::-webkit-datetime-edit {
+  font-family: "Roboto", sans-serif;
+  padding: 2px;
+  font-size: 20px;
+}
+
+::-webkit-datetime-edit-fields-wrapper {
+  border-radius: 10px;
+  padding: 7px;
+}
+
+::-webkit-datetime-edit-text {
+  color: #29282d;
+  padding: 0;
+}
+::-webkit-datetime-edit-day-field {
+  color: #ce7bb0;
+}
+
+::-webkit-datetime-edit-month-field {
+  color: #ce7bb0;
+}
+
+::-webkit-datetime-edit-year-field {
+  color: #ce7bb0;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.count__clock {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 55px;
+}
+.count__clock-item {
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 40px 0 rgba(206, 123, 176, 0.5);
+}
+.count__clock-item span {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 10px 0 7px;
+  color: #3f3351;
+}
+.count__text {
+  margin-top: 10px;
+}
